@@ -19,3 +19,12 @@ def index():
     title = 'Welcome to Global News'
 
     return render_template('index.html', title=title, business=business_news, entertainment=entertainment_news, general=general_news, health=health_news, science=science_news, sports=sports_news, technology=technology_news)
+
+
+@main.route('/articles/<source>')
+def articles(source):
+    '''
+    View articles from source
+    '''
+    articles = get_articles(source)
+    return render_template('article.html', articles=articles)
