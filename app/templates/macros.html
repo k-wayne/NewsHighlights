@@ -9,3 +9,19 @@
             </div>
         {% endfor %}
 {% endmacro %}
+
+{% macro displayArticle(articles_list) %}
+    {% for article in articles_list %}
+        {% if article.urlToImage %}
+        <div class="col-sm-4">
+        <div class="well" style="height:500px">
+            <img class="img-responsive" src="{{article.urlToImage}}" alt="{{article.title}}">
+            <h4>{{article.title}}</h4>
+            <p>{{article.description | truncate(50)}}</p>
+            <p>Created on: {{article.publishedAt}}</p>
+            <a href="{{article.url}}" class="btn btn-success">Read More...</a>
+        </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
