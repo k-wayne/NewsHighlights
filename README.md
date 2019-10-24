@@ -1,4 +1,4 @@
-# Sirius News Highlights
+# NewsApp
 
 ## Designed By [k-wayne]
 
@@ -80,4 +80,4 @@ As a user I would like to:
 ## License
 Licensed under the [MIT License](LICENSE)
 
-[k-wayne](https://github.com/k-wayne/NewsHighlights)
+[k-wayne](https://github.com/k-wayne/NewsHighlights) 2019
