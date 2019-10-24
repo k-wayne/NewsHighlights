@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+<!DOCTYPE html>
+<html>
+     <head> 
+          <title>NewsApp:Global News</title>
+     </head>
+
+     <body>
+          {% block content%}
+               <div class="container">
+               <div class="row">
+               {% if articles %}
+                    {{macro.displayArticle(articles)}}
+               {% else %}
+                    <h3>This source has no articles!!</h3>
+               {% endif %}
+               </div>
+               </div>
+
+          {% endblock %}
+     </body>
+</html>
