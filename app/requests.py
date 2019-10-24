@@ -91,7 +91,7 @@ def process_articles_results(articles_list):
         article_list: A list of dictionaries that contain article details
 
     Returns:
-        article_results: A lost of article objects
+        article_results: A list of article objects
     '''
 
     article_results = []
