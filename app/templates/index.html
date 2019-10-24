@@ -7,3 +7,49 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 {% endblock %}
+
+<!-- Content block -->
+{% block content%}
+<div class="container" style="font-family: 'Roboto Mono', monospace;">
+    <div class="row">
+        <h1 style="text-align:center" id="general"> <strong>General News</strong> </h1>
+        <hr>
+            {{macro.displaySourceList(general)}}
+    </div>
+    
+    <div class="row">
+        <h1 style="text-align:center" id="business"><strong>Business News</strong> </h1>
+        <hr>
+            {{macro.displaySourceList(business)}}
+    </div>
+
+    <div class="row">
+        <h1 style="text-align:center" id="entertainment"><strong>Entertainment News<strong></h1>
+        <hr>
+            {{macro.displaySourceList(entertainment)}}
+    </div>
+    
+    <div class="row">
+        <h1 style="text-align:center" id="health"> Health News </h1>
+        <hr>
+            {{macro.displaySourceList(health)}}
+    </div>
+
+    <div class="row">
+        <h1 style="text-align:center" id="science"> Science News </h1>
+        <hr>
+            {{macro.displaySourceList(science)}}
+    </div>
+
+    <div class="row">
+        <h1 style="text-align:center" id="sports"> Sports News </h1>
+        <hr>
+            {{macro.displaySourceList(sports)}}
+    </div>
+
+    <div class="row">
+        <h1 style="text-align:center" id="technology"> Technology News </h1>
+        <hr>
+            {{macro.displaySourceList(technology)}}
+    </div>
+{% endblock %}
